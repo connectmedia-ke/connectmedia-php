@@ -128,7 +128,7 @@ final class Client
             'Authorization' => 'Bearer ' . $this->apiKey,
             'Content-Type'  => 'application/json',
             'Accept'        => 'application/json',
-            'User-Agent'    => 'connectmedia-sms-php/1.0.0',
+            'User-Agent'    => 'connectmedia-sms-php/10.0.0',
         ];
         $raw  = ($this->transport)($this->baseUrl, $headers, $body, $this->timeout);
         $data = json_decode($raw, true);
