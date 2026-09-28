@@ -1,0 +1,13 @@
+{
+    "name": "connectmedia/sms",
+    "description": "Official PHP client for the Connect Media SMS API: bulk SMS to Safaricom, Airtel and Telkom in Kenya and 190+ countries.",
+    "type": "library",
+    "keywords": ["sms", "bulk sms", "kenya", "safaricom", "airtel", "sms api", "connect media"],
+    "homepage": "https://connectmedia.co.ke/developers/",
+    "license": "MIT",
+    "authors": [{ "name": "Connect Media", "email": "info@connectmedia.co.ke", "homepage": "https://connectmedia.co.ke/" }],
+    "support": { "email": "info@connectmedia.co.ke", "docs": "https://connectmedia.co.ke/developers/" },
+    "require": { "php": ">=7.4", "ext-curl": "*", "ext-json": "*" },
+    "autoload": { "psr-4": { "ConnectMedia\\Sms\\": "src/" } },
+    "scripts": { "test": "php tests/run.php" }
+}
