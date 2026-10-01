@@ -63,7 +63,7 @@ check('send builds the request', function () {
     $calls = [];
     $res   = (new Client(str_repeat('k', 64), Client::DEFAULT_BASE_URL, 30, fake(['code' => '201', 'message' => 'Queued'], $calls)))
         ->send(['0712345678', '+254733000111'], 'Hi', ['sender' => 'Brand']);
-    eq('https://dashboard.connectmedia.co.ke/api.php', $calls[0]['url']);
+    eq('https://app.connectmedia.co.ke/api.php', $calls[0]['url']);
     eq('Bearer ' . str_repeat('k', 64), $calls[0]['headers']['Authorization']);
     eq(['action' => 'send', 'to' => '254712345678,254733000111', 'message' => 'Hi', 'sender' => 'Brand'], $calls[0]['body']);
     eq('201', $res['code']);

@@ -12,7 +12,7 @@ namespace ConnectMedia\Sms;
  */
 final class Client
 {
-    public const DEFAULT_BASE_URL = 'https://dashboard.connectmedia.co.ke/api.php';
+    public const DEFAULT_BASE_URL = 'https://app.connectmedia.co.ke/api.php';
 
     /** Application code returned in the JSON envelope when each action succeeds. */
     private const SUCCESS_CODES = ['send' => '201', 'balance' => '200', 'history' => '202', 'inbox' => '302'];
@@ -128,7 +128,7 @@ final class Client
             'Authorization' => 'Bearer ' . $this->apiKey,
             'Content-Type'  => 'application/json',
             'Accept'        => 'application/json',
-            'User-Agent'    => 'connectmedia-sms-php/10.0.0',
+            'User-Agent'    => 'connectmedia-sms-php/10.0.1',
         ];
         $raw  = ($this->transport)($this->baseUrl, $headers, $body, $this->timeout);
         $data = json_decode($raw, true);

@@ -4,7 +4,7 @@ Official PHP client for the [Connect Media](https://connectmedia.co.ke/) SMS API
 
 ## Get an API key
 
-1. Create a free account at [dashboard.connectmedia.co.ke](https://dashboard.connectmedia.co.ke/).
+1. Create a free account at [app.connectmedia.co.ke](https://app.connectmedia.co.ke/).
 2. Generate a 64-character API key under **Profile, then API keys**.
 3. Top up any amount and register a sender ID (see [sender ID registration in Kenya](https://connectmedia.co.ke/sender-id-registration-kenya/)).
 
